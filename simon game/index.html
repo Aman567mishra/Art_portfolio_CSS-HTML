@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="icon" href="audio/aman55.jpg"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="clip1">
+    <source src="audio/simonSound1.mp3"></source>
+  </audio>
+
+    <audio id="clip2">
+        <source src="audio/simonSound2.mp3"></source>
+    </audio>
+    
+
+    <audio id="clip3">
+        <source src="audio/simonSound3.mp3"></source>
+    </audio>
+
+    <audio id="clip4">
+        <source src="audio/simonSound4.mp3"></source>
+    </audio>
+
+    <div class="heading">SIMON!</div>
+<div class="gameBody">
+    <div> 
+        <div class="pannel blue" id="blue"></div>
+       <div class="pannel yellow" id="yellow"></div>
+    </div>
+    <div>
+        <div class="pannel red" id="red"></div>
+        <div class="pannel green" id="green"></div>
+    </div>
+    <div class="center">
+        
+    </div>
+</div>
+<div class="switches">
+<input type="checkbox" class="togle" id="on">
+<button class="button" id="start">START</button>
+<input type="checkbox" class="togle" id="strict">
+</div>
+
+<div class="text1">
+    <span>POWER</span><span>STRICT</span>
+</div>
+<div class="count">
+    <span>COUNT</span>
+    <div class="turn" id="turn"></div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

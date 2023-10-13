@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #00ffff,0 0 10px #00ffff,0 0 15px #00ffff;
+    text-align: center;
+    position: relative;
+   bottom: -6vh;
+    font-size: 6vb;
+}
+body{
+    background-image:linear-gradient(90deg,black 0%,rgb(31, 31, 31) 30%, rgb(44, 44, 44) 60%, rgb(51, 51, 51) 80%, rgb(71, 71, 71) 100%);
+}
+.pannel{
+    width: 25vh;
+    height: 25vh;
+    display: inline-block;
+    cursor: grab;
+    position: relative;
+     top: 20vh;
+}
+.blue{
+    background-color: darkblue;
+    border-top-left-radius: 100%;
+}
+.yellow{
+    background-color: goldenrod;
+    border-top-right-radius: 100%;
+    z-index: 6;
+}
+.red{
+    background-color: darkred;
+    border-bottom-left-radius: 100%;
+    z-index: 5;
+}
+.green{
+    background-color: darkgreen;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0)  ;
+}
+.center{
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    /* background-color: rgb(22, 21, 21); */
+    display: inline-block;
+    position:relative ;
+    top: -19vh;
+    background-image:linear-gradient(90deg,rgb(20, 20, 20) 00%, rgb(53, 52, 52) 100%);
+    text-align: center;
+    /* left: 35%; */
+    box-shadow:  5px 10px 7px rgba(22, 22, 22, 0.945) inset;
+    z-index: 7;
+}
+.gameBody{
+    display: grid;
+    place-items: center;
+}
+.switches{
+   display: flex;
+   justify-content: center;
+   gap: 8vh;
+}
+.togle{
+   width: 23px;
+   height: 23px;
+   cursor: pointer;
+   accent-color: rgb(20, 201, 147);
+}
+.button{
+    width: 90px;
+    height: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow:  3px 2px 4px rgba(92, 157, 173, 0.288) ;
+    color: rgb(0, 0, 0);
+    background: rgb(4, 124, 145);
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    font-size: 15px;
+    color: rgb(20, 201, 147);
+}
+.count{
+    text-align: center;
+    color: rgb(12, 255, 214);
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    font-size: 20px;
+}
+.count .turn{
+    text-align: center;
+    border: 2px solid rgb(121, 81, 81);
+    margin: 5px;
+    width: 65px;
+    height: 28px;
+    font-size: 25px;
+    background-color: rgba(58, 14, 14, 0.911);
+    box-shadow: 3px 2px 4px rgba(243, 130, 130, 0.281); 
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 6px rgba(32, 32, 32, 0.849);
+  
+    font-weight: 550;
+}
+.blue:hover,.red:hover,.yellow:hover,.green:hover  {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 195, 255);
+}
+
+.button:active{
+    background-color: rgb(58, 153, 153);
+    color: rgb(247, 247, 247);
+    transition: ease-in-out 0.1s;
+}
+.button:hover{
+    transition: ease-in 0.1s;
+    box-shadow:  0 0 5px cyan,
+    0 0 25px cyan;
+}
+@media(250px<= width <= 600px){
+.count{
+    top: 120px;
+    right: 50px;
+}
+.pannel{
+    width: 21vh;
+    height: 21vh;
+}
+.center{
+    width: 22vh;
+    height: 22vh;
+    top: -13vh;
+}
+.button{
+    position: relative;
+     top: 90px;
+     width: 100px;
+    height: 45px;
+}
+.togle{
+    position: relative;
+     top: 70px;
+     width: 25px;
+    height: 25px;
+}
+.text1{
+    font-size: 17px;
+    gap: 190px;
+}
+
+}
